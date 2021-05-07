@@ -1,0 +1,23 @@
+form input[type="file"] {
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+    .mobile {
+        visibility: visible;
+    }
+    .notmobile{
+        visibility: hidden;
+        height: 0em;
+    }
+}
+@media only screen and (min-width: 426px) {
+    .notmobile {
+        visibility: visible;
+    }
+    .mobile{
+        visibility: hidden;
+        height: 0em;
+    }
+}
