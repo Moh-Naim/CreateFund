@@ -1,106 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-        <meta name="viewport" content="width=device-width">
-        <title>Create Fundraise</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-        <link rel="stylesheet" type="text/css" href='Create-Fundraise.css'/>
-        <link
-            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <div class="ui segment" style="margin: 3% 10%; padding: 2em;">
-            <h1> Create A Fundriase</h1>
-            <!--<div style="margin: 1em 0em; border: 1px solid black; height:100px;">
-                <label for="img">
-                    <input type="file" id="img" name="img" accept="image/*" />
-                    <div class="change_profile_image">
-                        <img
-                            class="ui centered image "
-                            src="/campaign_image.jpg"
-                            alt="profile image"
-                        />
-                        <i class="fa fa-edit"></i>
-                    </div>
-                </label>
-            
-            </div>-->
-            <form class="ui form">
-                <div class="field">
-                <label>Title</label>
-                <input type="text" name="Title" placeholder="Title">
-                </div>
-                <div class="field">
-                    <label>Description</label>
-                    <textarea rows="2"placeholder="Tell us your story..."></textarea>
-                </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<title>Create Fundraise</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="Create-Fundraise.css" />
+		<link
+			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="ui segment" style="margin: 3% 10%; padding: 2em">
+			<h1>Create A Fundriase</h1>
+			<div style="margin: 1em 0em; border: 1px solid black; height: 100px">
+				<label for="img" style="cursor: pointer">
+					<div class="change_profile_image">
+						<img
+							class="ui centered image main-profile-img"
+							src="campaign_image.jpg"
+							alt="profile image"
+						/>
+						<i class="fa fa-edit" style="background-color: white"></i>
+					</div>
+				</label>
+				<input
+					type="file"
+					id="img"
+					name="img"
+					accept="image/*"
+					style="visibility: hidden; cursor: pointer"
+				/>
+			</div>
+			<form class="ui form">
+				<div class="field">
+					<label>Title</label>
+					<input type="text" name="Title" placeholder="Title" />
+				</div>
+				<div class="field">
+					<label>Description</label>
+					<textarea rows="2" placeholder="Tell us your story..."></textarea>
+				</div>
 
+				<div class="mobile">
+					<div class="field" style="flex: 30%">
+						<label>Required Fund</label>
+						<input type="text" placeholder="Required Fund" />
+					</div>
+					<div class="field" style="flex: 30%">
+						<label>Credit Info</label>
+						<input type="text" placeholder="Credit Info" />
+					</div>
+					<div class="field" style="flex: 30%">
+						<label for="categories">Category</label>
+						<select id="categories" name="categories">
+							<option value="Education">Education</option>
+							<option value="Medical">Medical</option>
+							<option value="Business">Business</option>
+							<option value="Environment">Environment</option>
+							<option value="Family">Family</option>
+						</select>
+					</div>
+				</div>
 
+				<div class="notmobile">
+					<div class="ui form">
+						<div class="fields">
+							<div class="field" style="flex: 30%">
+								<label>Required Fund</label>
+								<input type="text" placeholder="Required Fund" />
+							</div>
+							<div class="field" style="flex: 30%">
+								<label>Credit Info</label>
+								<input type="text" placeholder="Credit Info" />
+							</div>
+							<div class="field" style="flex: 30%">
+								<label for="categories">Category</label>
+								<select id="categories" name="categories">
+									<option value="Education">Education</option>
+									<option value="Medical">Medical</option>
+									<option value="Business">Business</option>
+									<option value="Environment">Environment</option>
+									<option value="Family">Family</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="margin: 1em 0em">
+					<button class="ui button" type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
 
-                <div class="mobile">
-                    <div class="field" style="flex: 30%;">
-                        <label>Required Fund</label>
-                        <input type="text" placeholder="Required Fund">
-                    </div>
-                    <div class="field" style="flex: 30%;">
-                        <label>Credit Info</label>
-                        <input type="text" placeholder="Credit Info">
-                    </div>
-                    <div class="field" style="flex: 30%;">
-                        <label for="categories">Category</label>
-                        <select id="categories" name="categories">
-                            <option value="Education">Education</option>
-                            <option value="Medical">Medical</option>
-                            <option value="Business">Business</option>
-                            <option value="Environment">Environment</option>
-                            <option value="Family">Family</option>
-                        </select>
-                    </div>
-                </div>
-
-
-
-
-                <div class="notmobile">
-                    <div class="ui form">
-                        <div class="fields">
-                            <div class="field" style="flex: 30%;">
-                                <label>Required Fund</label>
-                                <input type="text" placeholder="Required Fund">
-                            </div>
-                            <div class="field" style="flex: 30%;">
-                                <label>Credit Info</label>
-                                <input type="text" placeholder="Credit Info">
-                            </div>
-                            <div class="field" style="flex: 30%;">
-                                <label for="categories">Category</label>
-                                <select id="categories" name="categories">
-                                    <option value="Education">Education</option>
-                                    <option value="Medical">Medical</option>
-                                    <option value="Business">Business</option>
-                                    <option value="Environment">Environment</option>
-                                    <option value="Family">Family</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="margin:1em 0em;">
-                    <button class="ui button" type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-
-
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
-        </script>
-    </body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+	</body>
 </html>
 <!--
 - Title

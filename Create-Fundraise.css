@@ -1,23 +1,60 @@
 form input[type="file"] {
-    display: none;
-    cursor: pointer;
+	display: none;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 425px) {
-    .mobile {
-        visibility: visible;
-    }
-    .notmobile{
-        visibility: hidden;
-        height: 0em;
-    }
+	.mobile {
+		visibility: visible;
+	}
+	.notmobile {
+		visibility: hidden;
+		height: 0em;
+	}
 }
 @media only screen and (min-width: 426px) {
-    .notmobile {
-        visibility: visible;
-    }
-    .mobile{
-        visibility: hidden;
-        height: 0em;
-    }
+	.notmobile {
+		visibility: visible;
+	}
+	.mobile {
+		visibility: hidden;
+		height: 0em;
+	}
+}
+.change_profile_image {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: white;
+	box-shadow: 0 0 8px 3px #b8b8b8;
+	position: relative;
+	margin: auto;
+}
+
+.change_profile_image img {
+	width: 100%;
+	height: 100%;
+}
+
+.change_profile_image i {
+	position: absolute;
+	top: 20px;
+	right: -7px;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--aw);
+	color: var(--light-blue);
+	box-shadow: 0 0 8px 3px #b8b8b8;
+}
+form input[type="file"] {
+	display: none;
+	cursor: pointer;
+}
+form label .change_profile_image {
+	cursor: pointer;
 }
